@@ -46,7 +46,7 @@ io.on('connection', (socket) => {
         callback();
     })
 
-    socket.on("join", (options, callback) => {
+    socket.on('join', (options, callback) => {
         // let the user join specific room
         const { error, user } = addUser({ id: socket.id, ...options });
         if (error) {
