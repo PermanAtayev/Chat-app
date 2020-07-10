@@ -1,4 +1,4 @@
-# Chat-app
+# Chat-app-Node
 Simple chat application that supports users and rooms. 
 For users to be able to chat with each other, they have to enter the same room.
 If the room that users want to access doesn't exist, it will be created automatically.
