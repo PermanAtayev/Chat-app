@@ -1,9 +1,10 @@
-# Chat-app
+# Chat-app-Node
 Simple chat application that supports users and rooms. 
 For users to be able to chat with each other, they have to enter the same room.
 If the room that users want to access doesn't exist, it will be created automatically.
 
-The deployment of the application can be found [here](https://).
+
+The deployment of the application can be found [here](https://chat-app-web2.herokuapp.com/).
 
 ## Build
 1. Install the node.js.

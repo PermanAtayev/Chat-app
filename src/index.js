@@ -9,7 +9,7 @@ const { generateMessage, generateLocationMessage } = require("./utils/messages")
 
 const { addUser, removeUser, getUser, getUsersInRoom } = require("./utils/users");
 
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 io.on('connection', (socket) => {
@@ -46,7 +46,7 @@ io.on('connection', (socket) => {
         callback();
     })
 
-    socket.on("join", (options, callback) => {
+    socket.on('join', (options, callback) => {
         // let the user join specific room
         const { error, user } = addUser({ id: socket.id, ...options });
         if (error) {
